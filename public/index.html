@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="normaliza.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Roboto:ital,wght@1,300&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      html {
+    box-sizing: border-box;/*Esta etiqueta es usada para arreglar cajas*/
+    font-size: 62.5%;/*reiniciar rem*/
+    scroll-behavior: smooth;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit; 
+  }
+  body{
+    background-color: black;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+  }
+    </style>
+    
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
