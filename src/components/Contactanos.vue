@@ -55,17 +55,20 @@ export default {
 </script>
 
 <style>
-@media only screen and (min-width:561px){
+@media only screen and (min-width:861px){
 .cocina img{
-  height: 60rem;
-  padding: 5rem;
+  width: 40%;
+  padding: 4rem 4rem 0rem 0rem ;
 }
 .cocina{
     display: flex;
     justify-content: space-between;
     padding: 6rem ;
 }
-
+.cocina p{
+    width: 90%;
+    margin:0% 10% 5% 0%
+}
 .color{
     background-image: url(../assets/15.jpg);
     height: 100vh;
@@ -75,85 +78,69 @@ export default {
     background-attachment: fixed;
 }
 .chef{
-   -webkit-box-shadow: -29px -9px 32px -11px rgba(0,0,0,0.75);
--moz-box-shadow: -29px -9px 32px -11px rgba(0,0,0,0.75);
-box-shadow: -29px -9px 32px -11px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -29px -9px 32px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -29px -9px 32px -11px rgba(0,0,0,0.75);
+    box-shadow: -29px -9px 32px -11px rgba(0,0,0,0.75);
 }
+
 .chef{
   text-align: center;
-  font-size: 4rem;
+  font-size: 2rem;
   background-color: #fffefecc;
-  padding: 2rem;
-  margin: 0rem 4rem;
-}
-.chef h3::after{
-  content: ''; /*preguntar como se pone en el centro*/
-        display: block;
-        height: 0.3rem;
-        width: 8rem;
-        background-color: #534f4f;
-        margin-left: 10rem;
+  padding: 2rem ;
+  margin: 15% 10% ;
 }
 .chef p{
   text-align: center;
   margin: 0rem 4rem 4rem 4rem;
+  
 }
 .chef img{
-  height:20rem;
+  width: 100%;
 }
 
 }
 
-@media only screen and (max-width:560px){
+@media only screen and (max-width:860px){
     .contact img{
-    height: 40rem;
-    padding-top: 5rem;
+    width:20%;
+    padding: 5rem;
 }
 .cocina{
     display:flex;
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 5rem;
+    margin: 10% 50%;
 }
 .cajita h2{
     font-size: 2rem;
     text-align: center
 }
-.cajita p{
-    margin: 1rem 3rem;
-}
+
 .color{
     background-image: url(../assets/15.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.display{
-    padding: 1rem;
-}
-.chef{
--webkit-box-shadow: -29px -9px 32px -11px rgba(0,0,0,0.75);
--moz-box-shadow: -29px -9px 32px -11px rgba(0,0,0,0.75);
-box-shadow: -29px -9px 32px -11px rgba(0,0,0,0.75);
-}
-.display{
-  padding-top:3rem;
-}
-.chef{
+
+.chef{ 
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.chef{
+  justify-content: center;
   color: #534f4f;
   background-color: #fffefecc;
   padding: 0rem 1rem;
-  margin: 2rem 1rem;
+  margin: 5% 2%;
 }
 .chef h3{
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Gotu', sans-serif;
   margin:0rem;
 }
@@ -162,8 +149,8 @@ box-shadow: -29px -9px 32px -11px rgba(0,0,0,0.75);
   text-align: justify;
   padding: 0rem 1rem;
 }
-.chef img{  
-  height: 10rem;
+.chef img{
+width: 25%;
 }
 .social ul li{
     margin: 0rem 1rem;

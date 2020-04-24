@@ -1,8 +1,8 @@
 <template>
   <div>
     <header class="header">
-      <div  class="msg">
-          <h1>Almost before we knew it, we had left the ground.</h1>
+      <div>
+          <h1>Almost before we <br/>knew it,we had<br/>left the<br/> ground.</h1>
       </div>
     </header>
     <section data-aos="fade-right"
@@ -82,25 +82,26 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-@media only screen and (min-width:561px){
+@media only screen and (min-width:861px){
   .header{
     background-image: url(../assets/1.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     top: 0%;
-    
   }
 
 h1{
   color: #ffffff;
   text-shadow: 1px 1px 0px #0f0f0f, 0 0 1em #0f0f0f, 0 0 0.2em #0f0f0f;
-  font-size: 8rem;
+  font-size: 5rem;
   font-family: 'Roboto', sans-serif;
+  padding: 3% 0% 0% 8%;
 }
 h2{
-  font-size: 8rem;
+  font-size: 6rem;
   font-family: 'Gotu', sans-serif;
   margin: 0rem;
   padding: 0rem;
@@ -117,34 +118,29 @@ p{
 .caja h2{
   text-align: center
 }
-.msg {
-  padding: 5rem;
-}
-.msg h1{
-  margin: 2rem 35rem 5rem 5rem;
-}
 .food{
   display: flex;
   justify-content: space-between;
 }
 .food img{
-  height: 70rem;
+  width:50%;
   padding: 7rem;
 }
 
 .cartas{
     background-image: url(../assets/12.jpg);
-    height: 100vh;
+    height: 100vh; 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+
 }
 
 .display{
-  padding: 3rem 7rem;
   display: flex;
   justify-content: space-between;
+  text-align: center;
   font-family: 'Gotu', sans-serif;
   color: #534f4f;
 }
@@ -153,15 +149,7 @@ p{
   font-size: 2rem;
   background-color: #fffefecc;
   padding: 2rem;
-  margin: 3rem;
-}
-.menu h3::after{
-  content: ''; /*preguntar como se pone en el centro*/
-        display: block;
-        height: 0.3rem;
-        width: 8rem;
-        background-color: #534f4f;
-        margin-left: 10rem;
+  margin: 20% 10% ;
 }
 .menu p{
   text-align: center;
@@ -169,7 +157,7 @@ p{
   
 }
 .menu img{
-  height: 20rem;
+  width: 100%;
 }
 .final{
   display: flex;
@@ -178,18 +166,18 @@ p{
   
 }
 .final img{
-  height: 70rem;
+  width:50%;
   padding: 7rem;
 }
 .parrafo{
-  margin: 0rem 20rem;
+  margin: 0% 20%;
 }
 .parrafo p{
   text-align: center;
 }
 
 }
-@media only screen and (max-width:560px){
+@media only screen and (max-width:860px){
   .header{
     background-image: url(../assets/1.jpg);
     height: 100vh;
@@ -197,6 +185,7 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     top: 0%;
     
   }
@@ -204,14 +193,15 @@ p{
 h1{
   color: #ffffff;
   text-shadow: 1px 1px 0px #0f0f0f, 0 0 1em #0f0f0f, 0 0 0.2em #0f0f0f;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Roboto', sans-serif;
+  padding: 10% 0% 0% 8%;
 }
 h2{
   font-size: 4rem;
   font-family: 'Gotu', sans-serif;
-  margin: 0rem;
-  padding: 0rem;
+  margin: 0%;
+  padding: 0%;
 }
 p{
   font-size: 1.5rem;
@@ -225,12 +215,7 @@ p{
 .caja h2{
   text-align: center
 }
-.msg {
-  padding: 3rem;
-}
-.msg h1{
-  padding-top: 8rem;
-}
+
 .food{
   display:flex;
   flex-direction: column;
@@ -241,7 +226,7 @@ p{
 }
 
 .food img{
-  height: 40rem;
+  width:  50%;
   padding-top: 4rem;
 }
 .cartas{
@@ -250,24 +235,27 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .display{
-  padding-top:3rem;
+  padding:1% 0% 0% 1%;
+  
 }
-.menu{
+.menu{ 
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu{
+  justify-content: center;
   color: #534f4f;
   background-color: #fffefecc;
   padding: 0rem 1rem;
-  margin: 2rem 1rem;
+  margin: 5% 2%;
 }
 .menu h3{
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Gotu', sans-serif;
   margin:0rem;
 }
@@ -277,7 +265,7 @@ p{
   padding: 0rem 1rem;
 }
 .menu img{
-  height: 10rem;
+width: 25%;
 }
 .final{
   display:flex;

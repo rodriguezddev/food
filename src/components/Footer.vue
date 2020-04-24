@@ -31,7 +31,7 @@ export default {
 }
 </script>
 <style >
-@media only screen and (min-width:561px){
+@media only screen and (min-width:861px){
 .social ul li{
     list-style: none;
     color: rgb(141, 137, 137);
@@ -70,7 +70,7 @@ export default {
   color:black;
 }
 }
-@media only screen and (max-width:560px){
+@media only screen and (max-width:860px){
     .social ul li{
     margin: 0rem 1rem;
     list-style: none;
